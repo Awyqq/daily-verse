@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daily Verse Redirect</title>
+  <script>
+    // 页面加载后随机跳转
+    window.onload = function () {
+      const totalPages = 500;
+      const randomIndex = Math.floor(Math.random() * totalPages) + 1;
+      const filename = `verse_${String(randomIndex).padStart(3, '0')}.html`;
+      window.location.href = filename;
+    };
+  </script>
+</head>
+<body>
+  <p>Loading your verse of the day...</p>
+</body>
+</html>
